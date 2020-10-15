@@ -32,7 +32,7 @@ func TestIncrement(t *testing.T) {
 			args: args{
 				x: 0,
 			},
-			wantResult: 1,
+			wantResult: 2,
 		},
 		{
 			name: "max int",
