@@ -18,11 +18,13 @@ steps:
   inputs:
     version: '1.15.2'
 - task: Go@0
+  name: GoGet
   inputs:
     command: 'get'
     arguments: '-d'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
 - task: Go@0
+  name: GoTest
   inputs:
     command: 'test'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
