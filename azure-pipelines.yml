@@ -5,6 +5,9 @@
 
 trigger:
 - develop
+pr:
+- develop
+- master
 
 pool:
   name: 'Azure Epiphany cluster - epiphany-build-agents-v2'
