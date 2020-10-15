@@ -32,6 +32,13 @@ func TestIncrement(t *testing.T) {
 			args: args{
 				x: 0,
 			},
+			wantResult: 1,
+		},
+		{
+			name: "one",
+			args: args{
+				x: 1,
+			},
 			wantResult: 2,
 		},
 		{
