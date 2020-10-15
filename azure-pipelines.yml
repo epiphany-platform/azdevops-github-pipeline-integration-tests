@@ -7,7 +7,7 @@ trigger:
 - develop
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'Azure Epiphany cluster - epiphany-build-agents-v2'
 
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
