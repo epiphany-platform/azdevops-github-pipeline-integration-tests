@@ -18,7 +18,7 @@ steps:
   inputs:
     version: '1.15.2'
 - task: Go@0
-  name: GoGet
+  name: GoRealGet
   inputs:
     command: 'get'
     arguments: '-d'
