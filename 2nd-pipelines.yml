@@ -19,7 +19,4 @@ steps:
   name: EnsureGo1_15
   inputs:
     version: '1.15.2'
-- script: |
-    echo ${{ variables.one }} # outputs initialValue
-    echo $(one)
-    displayName: First variable pass
+- bash: echo $(one)
