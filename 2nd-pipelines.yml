@@ -1,0 +1,19 @@
+# Go
+# Build your Go project.
+# Add steps that test, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/go
+
+trigger:
+- develop
+pr:
+- develop
+- master
+
+pool:
+  name: 'Azure Epiphany cluster - epiphany-build-agents-v2'
+
+steps:
+- task: GoTool@0
+  name: EnsureGo1_15
+  inputs:
+    version: '1.15.2'
